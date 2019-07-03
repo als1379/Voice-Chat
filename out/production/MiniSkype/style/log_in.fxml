@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="625.0" maxWidth="460.0" prefHeight="625.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LogIn">
+   <children>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="460.0" style="-fx-background-color: #00aff0;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/iconfinder_skype_834715.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="25.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/iconfinder_microsoft_294669.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="123.0" prefHeight="86.0" prefWidth="150.0" text="Sign in">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="190.0" prefHeight="21.0" prefWidth="142.0" text="to continue to Skype" textAlignment="CENTER" />
+      <TextField fx:id="usenameField" layoutX="34.0" layoutY="220.0" onAction="#onUsernameFieldClicked" prefHeight="31.0" prefWidth="393.0" promptText="username,phone or email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #008cc0;" />
+      <TextField fx:id="passwordField" layoutX="34.0" layoutY="280.0" onAction="#onPasswordFieldClicked" prefHeight="31.0" prefWidth="393.0" promptText="password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #008cc0;" />
+      <Label contentDisplay="CENTER" layoutX="33.0" layoutY="331.0" prefHeight="33.0" prefWidth="91.0" text="No account?" textAlignment="CENTER" />
+      <Button fx:id="createOneButton" layoutX="118.0" layoutY="332.0" mnemonicParsing="false" onAction="#onCreateOneClicked" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: transparent;" text="Create one" textFill="#00aff0" />
+      <Button fx:id="nextButton" layoutX="296.0" layoutY="386.0" mnemonicParsing="false" onAction="#onNextButtonClicked" prefHeight="50.0" prefWidth="131.0" style="-fx-background-color: #008cc0; -fx-background-radius: 0;" text="Next" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
